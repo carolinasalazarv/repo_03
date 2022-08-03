@@ -1,0 +1,289 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+
+}
+
+
+.header{
+    background-color: rgb(216, 184, 189);
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(175, 78, 138);
+    flex-wrap: wrap;
+    
+    
+}
+
+.menu{
+    display: flex;
+    list-style: none ;
+    
+    
+
+}
+
+.menu li{
+    display: flex;
+    margin: 10px 10px;
+    
+    
+}
+.img-header{
+    width: 150px;
+    padding: 20px 20px;
+}
+
+.img-main{
+    height: 100px;
+    padding: 10px 10px;
+    justify-content: space-around;
+    
+    
+}
+h1{
+    display: flex ;
+}
+
+.main{
+    display: flex;
+    padding: 2rem 8rem;
+    font-style: oblique;
+    font-family: cursive;
+    gap: 4rem;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info-main{
+    width: 50%;
+    background-color: rgb(240, 228, 250);    
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    
+
+}
+
+.info-main h1{
+
+    margin-bottom: 1rem;
+}
+
+.socialmedia{
+    display: flex;
+    height: 150px;
+    background-color: rgb(216, 184, 189);
+    padding: 1rem 5rem;
+    list-style: none;
+    border-top: 2px solid rgb(175, 78, 138);
+    justify-content: left;
+    align-items: center;
+}
+
+
+.img2{
+    width: 150px;
+    align-items: center;
+}
+
+.sec1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2rem;
+    text-align: center;
+    margin: 4rem;
+
+}
+.dato{
+    width: 45%;
+    padding: 0.5rem 1.5rem;
+}
+
+.form{
+    display: flexbox;
+    padding: 2rem 2rem;
+    gap: 2rem;
+
+
+}
+
+#grilla{
+
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: "a1 a5 a3"
+                         "a1 a5 a3"
+                         "a1 a5 a3";
+    column-gap: 2rem;
+    justify-content: space-around;
+    font-family: 'Ibarra Real Nova', serif;
+    
+
+}
+
+#hijouno{
+
+    grid-area: a1;
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(pink, orange);
+    
+}
+
+#hijodos{
+
+    grid-area: a3;
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(pink, orange);
+}
+
+#hijotres{
+   
+    grid-area: a5;
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(pink, orange);
+}
+
+#grillauno{
+    display: grid;
+
+
+}
+
+@media only screen and (max-width:600px){
+
+    #grillauno{
+        background-color: rgb(240, 210, 215);
+        height: 1900px;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-areas:    "foto1"
+                                "foto2"
+                                "foto3"
+                                "foto4"
+                                "foto5"
+                                "foto6";
+        align-content: space-around;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .menu{
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+#img_grillauno{
+    width: 300px;
+    align-items: center;
+   
+}
+
+#img_grilla{
+    width:200px;
+    align-items: center;
+    padding: 30px 35px;
+
+}
+
+#img_grilla:hover{
+    rotate: 45deg;
+
+}
+
+#text_product{
+
+    padding: 10px 10px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size:large;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+#button{
+    padding: 2px 2px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: medium;
+    background-color: antiquewhite;
+    width: 100px;
+    
+
+}
+
+#button:hover{
+    transform: translate(80px, 80px);
+    background-color: rgb(121, 121, 218);
+}
+
+
+
+@media only screen and (min-width:600px){
+
+    #grillauno{
+        background-color: rgb(235, 235, 91);
+        height: 1600px;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 500px 500px 500px ;
+        grid-template-areas:    "foto1"  "foto2"
+                                "foto3"  "foto4"
+                                "foto5"  "foto6";
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+       
+
+    }
+    .menu{
+        height: 150px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+}
+
+@media only screen and (min-width:990px){
+
+    #grillauno{
+        background-color: rgb(250, 213, 145);
+        height: 1300px;
+        grid-template-columns: 30% 30% 30% ;
+        grid-template-rows: 600px 600px ;
+        grid-template-areas:    "foto1"  "foto2" "foto3"
+                                "foto4"  "foto5" "foto6";
+                                
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .menu{
+        height: 150px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+
+
